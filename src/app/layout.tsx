@@ -6,15 +6,14 @@ export const metadata = {
   description: '言語聴覚支援アプリ - サインアップ・ログイン・会話トレーニング',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <Header />
-        <main style={{ flex: 1, overflowY: 'auto' }}>{children}</main>
-        <FooterNav />
+      <body>
+        {children}
       </body>
     </html>
   )
 }
+
 
