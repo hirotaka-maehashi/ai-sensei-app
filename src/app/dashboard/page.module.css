@@ -1,0 +1,22 @@
+.container {
+  max-width: 640px;
+  margin: 60px auto;
+  padding: 32px;
+  background-color: #f4f8fc;
+  border: 1px solid #d0d7de;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #003366;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: #333;
+}
+
