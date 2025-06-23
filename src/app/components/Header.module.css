@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #4f80ff;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.left {
+  font-size: 1.1rem;
+}
+
+.right {
+  font-size: 1.3rem;
+}
+
+.settingsButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

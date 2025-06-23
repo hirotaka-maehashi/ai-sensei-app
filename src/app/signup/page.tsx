@@ -40,7 +40,7 @@ export default function SignUpPage() {
         type="text"
         value={name}
         onChange={e => setName(e.target.value)}
-        placeholder="名前の入力：（例）山田太郎"
+        placeholder="読んで欲しい名前：（例）たかしさん、あかりさん"
         className={styles.input}
       />
 

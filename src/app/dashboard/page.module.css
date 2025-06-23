@@ -1,22 +1,154 @@
-.container {
-  max-width: 640px;
-  margin: 60px auto;
-  padding: 32px;
-  background-color: #f4f8fc;
-  border: 1px solid #d0d7de;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+/* === 改良後：スクロール可能なスマホ対応ダッシュボードCSS === */
+.wrapper {
+  margin-top: 20px;
+  padding: 1.5rem;
+  padding-bottom: 80px; /* ← フッター分確保 */
+  overflow-y: auto;     /* ✅ スクロールを有効にする */
+  -webkit-overflow-scrolling: touch; /* ✅ iOSで慣性スクロール */
+  box-sizing: border-box;
+  background: linear-gradient(to bottom right, #fefefe, #f8f8ff);
+}
+
+.card {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.greeting {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
   text-align: center;
+  color: #222;
+  word-break: keep-all;
 }
 
-.title {
-  font-size: 24px;
-  margin-bottom: 16px;
-  color: #003366;
+.message {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  word-break: keep-all;
 }
 
-.paragraph {
-  font-size: 16px;
+.block {
+  padding: 1.2rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  background-color: #f8faff;
+  border: 1px solid #e0e8f0;
+  box-sizing: border-box;
+}
+
+.blockMuted {
+  background: #f3f3f3;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.blockTitle {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
   color: #333;
+  font-size: 1.1rem;
 }
 
+.badgeBox {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #f4c542;
+  font-weight: bold;
+}
+
+.talkButton {
+  font-size: 1.1rem;
+  padding: 1rem;
+  background: #4f80ff;
+  border-radius: 16px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.talkButton:hover {
+  background-color: #3a66e0;
+}
+
+.quizNote {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.historyList {
+  list-style: none;
+  padding: 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.historyList li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.6rem;
+  position: relative;
+  line-height: 1.5;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.historyList li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #2cb67d;
+  font-weight: bold;
+}
+
+/* === レスポンシブ対応（スマホ向け） === */
+
+@media screen and (max-width: 480px) {
+  .greeting {
+    font-size: 1.5rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+
+  .talkButton {
+    font-size: 1rem;
+    white-space: normal;
+  }
+
+  .blockTitle {
+    font-size: 1rem;
+  }
+
+  .badgeBox {
+    font-size: 1.3rem;
+  }
+
+  .historyList li {
+    font-size: 0.9rem;
+  }
+}

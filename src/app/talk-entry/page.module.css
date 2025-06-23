@@ -1,0 +1,72 @@
+.container {
+  padding: 2rem;
+  text-align: center;
+  background: #f9f9ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  text-align: center;
+}
+
+.card:hover {
+  background-color: #eef3ff;
+}
+
+.backArea {
+  margin-top: 2rem;
+  padding-bottom: 10rem; /* ← これが超重要！！ */
+}
+
+
+.backButton {
+  font-size: 1rem;
+  color: #4f80ff;
+  background: none;
+  border: 1px solid #4f80ff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.backButton:hover {
+  background-color: #4f80ff;
+  color: #fff;
+}

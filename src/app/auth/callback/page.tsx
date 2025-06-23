@@ -24,7 +24,7 @@ export default function AuthCallbackPage() {
 
   return (
     <main style={{ padding: '2rem', textAlign: 'center' }}>
-      <p>ログインを確認しています...</p>
+      <p>認証を確認しています...</p>
     </main>
   )
 }
